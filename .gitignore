@@ -1,24 +1,36 @@
-node_modules
-
-# Output
-.output
-.vercel
-.netlify
-.wrangler
-/.svelte-kit
+# Build outputs
+.svelte-kit
 /build
 /dist
+node_modules
+
+# Environment variables
+.env
+.env.*
+!.env.example
 
 # OS
 .DS_Store
 Thumbs.db
 
-# Env
-.env
-.env.*
-!.env.example
-!.env.test
+# Editor
+.vscode
+.idea
+*.swp
+*.swo
+*~
 
-# Vite
-vite.config.js.timestamp-*
-vite.config.ts.timestamp-*
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage
+.nyc_output
+
+# Misc
+.cache
