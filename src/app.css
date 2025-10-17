@@ -1,24 +1,28 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
-  --color-brand-blue: #0b74de;
-  --color-accent-green: #22c55e;
-  
-  --font-family-sans: Inter, system-ui, sans-serif;
+@layer base {
+  :root {
+    --brand-blue: #0b74de;
+    --accent-green: #22c55e;
+  }
+
+  body {
+    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100;
+  }
 }
 
-body {
-  @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100;
-}
+@layer components {
+  .btn-primary {
+    @apply bg-brand-blue hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors duration-200;
+  }
 
-.btn-primary {
-  @apply bg-[--color-brand-blue] hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors duration-200;
-}
+  .btn-secondary {
+    @apply bg-accent-green hover:bg-green-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors duration-200;
+  }
 
-.btn-secondary {
-  @apply bg-[--color-accent-green] hover:bg-green-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors duration-200;
-}
-
-.card {
-  @apply bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-200;
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-200;
+  }
 }
