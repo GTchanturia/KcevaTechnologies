@@ -19,7 +19,7 @@
         src={deal.image}
         alt={deal.title}
         class="w-full h-48 object-cover"
-        onerror="this.src='/images/placeholder.jpg'"
+        onerror={(e) => e.currentTarget.src = '/images/placeholder.jpg'}
       />
       {#if savings}
         <div class="absolute top-2 right-2 bg-accent-green text-white px-3 py-1 rounded-full text-sm font-bold">
