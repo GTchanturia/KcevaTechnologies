@@ -1,0 +1,60 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-01-17T10:00:00Z",
+  "countries": [
+    {
+      "code": "GLOBAL",
+      "name": "Global",
+      "currency": "USD",
+      "enabled": true
+    },
+    {
+      "code": "DE",
+      "name": "Germany",
+      "currency": "EUR",
+      "enabled": true
+    },
+    {
+      "code": "US",
+      "name": "United States",
+      "currency": "USD",
+      "enabled": true
+    },
+    {
+      "code": "UK",
+      "name": "United Kingdom",
+      "currency": "GBP",
+      "enabled": true
+    },
+    {
+      "code": "FR",
+      "name": "France",
+      "currency": "EUR",
+      "enabled": true
+    },
+    {
+      "code": "ES",
+      "name": "Spain",
+      "currency": "EUR",
+      "enabled": true
+    },
+    {
+      "code": "IT",
+      "name": "Italy",
+      "currency": "EUR",
+      "enabled": true
+    },
+    {
+      "code": "CA",
+      "name": "Canada",
+      "currency": "CAD",
+      "enabled": true
+    },
+    {
+      "code": "AU",
+      "name": "Australia",
+      "currency": "AUD",
+      "enabled": true
+    }
+  ]
+}
